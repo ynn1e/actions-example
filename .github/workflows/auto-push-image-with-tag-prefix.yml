@@ -14,7 +14,7 @@ jobs:
         id: meta
         with:
           images: ghcr.io/ynn1e/hello
-          tags: type=match,pattern=twp/v(\d.\d.\d)
+          tags: type=match,pattern=twp/v(\d.\d.\d),group=1
       - uses: docker/login-action@v3
         with:
           registry: ghcr.io
