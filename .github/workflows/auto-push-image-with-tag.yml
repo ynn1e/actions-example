@@ -13,7 +13,7 @@ jobs:
       - uses: docker/metadata-action@v5
         id: meta
         with:
-          flavor: 'prefix=apiwt/'
+          flavor: prefix='apiwt/'
           images: ghcr.io/ynn1e/hello
           tags: type=semver,pattern={{version}}
       - uses: docker/login-action@v3
